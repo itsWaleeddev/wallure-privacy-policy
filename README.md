@@ -1,1 +1,0 @@
-# wallure-privacy-policy
