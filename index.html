@@ -26,7 +26,7 @@
     <li>Pixabay API – for fetching wallpaper images</li>
   </ul>
 
-  <p>These services may collect information such as device type, OS version, Advertising ID, IP address, and ad interaction data. No personalized ads are served, and users are shown non-personalized ads only. Content filters are applied in AdMob to block inappropriate or sensitive categories in line with our values.</p>
+  <p>These services may collect information such as device type, OS version, Advertising ID, IP address, and ad interaction data. The Advertising ID may be used by AdMob solely for delivering and measuring non-personalized ads, as well as for fraud prevention and compliance, in accordance with Google Play policies. No personalized ads are served, and users are shown non-personalized ads only. Content filters are applied in AdMob to block inappropriate or sensitive categories in line with our values.</p>
 
   <h2>3. App Features and Functionality</h2>
   <p>Wallure is a wallpaper browsing application that allows users to:</p>
@@ -38,8 +38,11 @@
     <li>Preview wallpapers before saving</li>
     <li>Set wallpapers using the Android default wallpaper picker</li>
   </ul>
+
   <h2>4. Data Permissions</h2>
-  <p>When saving a wallpaper, the Application requests permission to access the device’s media storage (photos). This is used only for saving the selected image to the user's gallery when they choose to download it. If permission is not granted, saving functionality will be disabled, but the app remains otherwise usable. The Application also uses the Android default wallpaper picker for setting wallpapers, which does not collect or store personal data.</p>
+  <p>When saving a wallpaper, the Application requests permission to access the device’s media storage (<code>READ_MEDIA_IMAGES</code>). This is used only for saving the selected image to the user's gallery when they choose to download it. If permission is not granted, saving functionality will be disabled, but the app remains otherwise usable.</p>
+  <p>The Application also requests the <code>READ_MEDIA_VIDEO</code> permission because it is bundled automatically by the media library dependency. The app does not access, read, or modify any videos, and no video-related features are implemented.</p>
+  <p>The Application also uses the Android default wallpaper picker for setting wallpapers, which does not collect or store personal data.</p>
 
   <h2>5. Internet Usage</h2>
   <p>An active internet connection is required to fetch wallpapers from the Pixabay API and to display ads via AdMob. Users are responsible for any data charges incurred through internet usage.</p>
@@ -48,7 +51,7 @@
   <p>The Application itself does not use cookies. However, integrated third-party services such as AdMob may use cookies or similar tracking technologies to provide non-personalized ads and measure ad performance.</p>
 
   <h2>7. Children’s Privacy</h2>
-  <p>The Application is not directed toward children under the age of 13. While the app does not collect any personal information, it is advised that children use the app under parental guidance. All ads and content are filtered to avoid sensitive categories.</p>
+  <p>The Application is not directed toward children under the age of 13. While the app does not collect any personal information, it is advised that children use the app under parental guidance. All ads and content are filtered to avoid sensitive categories, and only non-personalized ads are shown to all users.</p>
 
   <h2>8. Security</h2>
   <p>Since no personal user data is collected or stored, the risk to user privacy is minimal. However, users are advised not to use rooted or jailbroken devices, as these can compromise both device and app security.</p>
